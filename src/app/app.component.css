@@ -1,0 +1,222 @@
+.example-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.example-is-mobile .example-toolbar {
+  position: fixed;
+  /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+  z-index: 2;
+}
+
+h1.example-app-name {
+  margin-left: 8px;
+}
+
+.example-sidenav-container {
+  /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
+       causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
+  flex: 1;
+}
+
+.example-is-mobile .example-sidenav-container {
+  /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
+       `<body>` to be our scrolling element for mobile layouts. */
+  flex: 1 0 auto;
+}
+
+#logo {
+  background: #7E57C2;
+  color: white;
+  padding: 10px;
+}
+
+#darkPurple {
+  background: #300950
+}
+
+.mat-sidenav {
+  width: 200px;
+}
+
+.opacityCheck {
+  background: #3A1B56;
+}
+
+.opacityCheckDefined {
+  border-color: #3A1B56;
+  background: #3A1B56;
+  box-shadow: #3A1B56;
+}
+
+.side-nav-font-color {
+  color: #E5D8F1;
+}
+
+.colorWhiteIcon {
+  color: #E5D8F1;
+  height: 50px;
+  font-size: 35px;
+  align-items: center;
+  padding-left: 5px;
+}
+
+.opacityCheck .mat-expansion-panel-header-title,
+.opacityCheck .mat-expansion-panel-header-description {
+  align-items: center;
+}
+
+/* In order to style nested elements dynamically added by Angular Material component you need to use special selector ::ng-deep. That allows to work around view encapsulation. */
+
+::ng-deep .opacityCheck>.mat-expansion-indicator:after {
+  color: #E5D8F1;
+}
+
+.logoTitle {
+  color: white;
+  padding: 10px;
+}
+
+#hamburgerIcon {
+  height: 40px;
+  padding-top: 15px;
+}
+
+::ng-deep .specific-class>.mat-expansion-indicator:after {
+  color: #E5D8F1;
+}
+
+.mat-expansion-panel-body {
+  padding: 0px;
+}
+
+#leftPadding {
+  padding-left: 5px;
+}
+
+#greyBackground {
+  background: #f5f5f5;
+  float: right;
+}
+
+.example-spacer {
+  width: 100%;
+}
+
+.spacer-spacer {
+  width: 5%;
+}
+
+.alignCenter {
+  vertical-align: middle;
+}
+
+#paddingBody {
+  padding-left: 20px;
+  padding-right: 20px;
+  background: #e4e4e4;
+}
+
+#greyBody {
+  background: #e4e4e4;
+}
+
+.paddingRight {
+  padding-right: 5px;
+}
+
+.paddingRightAlot {
+  padding-right: 60px;
+}
+
+.button:hover {
+  opacity: 1 !important;
+}
+
+.mat-expansion-panel-header {
+  padding: 0 16px;
+}
+
+.mat-expansion-panel:not([class*=mat-elevation-z]) {
+  box-shadow: none;
+}
+
+.purpleBackground {
+  background: #300950;
+}
+
+/* mobile-small */
+
+@media all and (min-width: 0) and (max-width: 360px) and (orientation: portrait) {}
+
+/* mobile-large */
+
+@media all and (min-width: 361px) and (orientation: portrait) {}
+
+/* mobile-small-landscape */
+
+@media all and (min-width: 0) and (max-width: 480px) and (orientation: landscape) {}
+
+@media all and (min-width: 481px) and (orientation: landscape) {}
+
+@media all and (min-width: 600px) and (max-width: 960px) and (orientation: landscape) {
+  .mat-drawer {
+    width: 80px;
+  }
+  ::ng-deep .specific-class>.mat-expansion-indicator:after {
+    color: #3A1B56;
+  }
+  .colorWhite {
+    color: #E5D8F1;
+    width: 50px;
+  }
+}
+
+/* tablet-large-landscape */
+
+@media all and (min-width: 961px) and (orientation: landscape) {}
+
+/* tablet-small */
+
+@media all and (min-width: 600px) and (orientation: portrait) {}
+
+/* tablet-large */
+
+@media all and (min-width: 601px) and (max-width: 840px) and (orientation: portrait) {}
+
+/* desktop-x-small-landscape */
+
+@media all and (min-width: 0) and (max-width: 480px) and (orientation: landscape) {}
+
+/* desktop-x-small */
+
+@media all and (min-width: 0) and (max-width: 480px) and (max-aspect-ratio: 4/3) {}
+
+/* desktop-small-landscape */
+
+@media all and (min-width: 481px) and (max-width: 840px) and (orientation: landscape) {}
+
+/* desktop-small */
+
+@media all and (min-width: 481px) and (max-width: 840px) and (max-aspect-ratio: 4/3) {}
+
+/* desktop-medium-landscape */
+
+@media all and (min-width: 841px) and (max-width: 1280px) and (orientation: landscape) {}
+
+/* desktop-medium */
+
+@media all and (min-width: 841px) and (max-width: 1280px) and (max-aspect-ratio: 4/3) {}
+
+/* desktop-large */
+
+@media all and (min-width: 1281px) and (max-width: 1600px) {}
+
+/* desktop-xlarge */
+
+@media all and (min-width: 1601px) and (max-width: 1920px) {}
