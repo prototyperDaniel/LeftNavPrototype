@@ -1,4 +1,4 @@
-.example-container {
+.side-nav-container {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -6,6 +6,7 @@
   bottom: 0;
   left: 0;
   right: 0;
+  background: #e4e4e4;
 }
 
 .example-is-mobile .example-toolbar {
@@ -40,9 +41,9 @@ h1.example-app-name {
   background: #300950
 }
 
-.mat-sidenav {
+/* .mat-sidenav {
   width: 200px;
-}
+} */
 
 .opacityCheck {
   background: #3A1B56;
@@ -150,26 +151,101 @@ h1.example-app-name {
   background: #300950;
 }
 
+.mat-sidenav {
+  max-width: 55px;
+  background: #300950;
+}
+
+.mat-menu-item {
+  background: #300950;
+  color: white;
+}
+
+.mat-menu-content {
+  background: #300950;
+}
+
+::ng-deep .specific-class>.mat-expansion-indicator:after {
+  color: #E5D8F1;
+}
+
+.colorWhite {
+  color: #E5D8F1;
+  width: 50px;
+}
+
 /* mobile-small */
 
-@media all and (min-width: 0) and (max-width: 360px) and (orientation: portrait) {}
+@media all and (min-width: 0) and (max-width: 360px) and (orientation: portrait) {
+  .icon-nav {
+    display: none;
+  }
+}
 
 /* mobile-large */
 
-@media all and (min-width: 361px) and (orientation: portrait) {}
+@media all and (min-width: 361px) and (orientation: portrait) {
+  .icon-nav {
+    display: none;
+  }
+}
 
 /* mobile-small-landscape */
 
-@media all and (min-width: 0) and (max-width: 480px) and (orientation: landscape) {}
+@media all and (min-width: 0) and (max-width: 480px) and (orientation: landscape) {
+  .icon-nav {
+    display: none;
+  }
+}
 
-@media all and (min-width: 481px) and (orientation: landscape) {}
+@media all and (min-width: 481px) and (orientation: landscape) {
+  .icon-nav {
+    display: none;
+  }
+  /* .example-sidenav {
+    display: none;
+  } */
+  /*
+  .icon-nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  } */
+  ::ng-deep .specific-class>.mat-expansion-indicator:after {
+    color: #E5D8F1;
+  }
+  .colorWhite {
+    color: #E5D8F1;
+    width: 50px;
+  }
+}
 
-@media all and (min-width: 600px) and (max-width: 960px) and (orientation: landscape) {
-  .mat-drawer {
-    width: 80px;
+@media all and (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+  /* .icon-nav {
+    display: none;
+  } */
+  /* .example-sidenav {
+    display: none;
+  } */
+  .side-nav-container {
+    display: none;
+    background: #e4e4e4;
+  }
+  .icon-nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
   ::ng-deep .specific-class>.mat-expansion-indicator:after {
-    color: #3A1B56;
+    color: #E5D8F1;
   }
   .colorWhite {
     color: #E5D8F1;
@@ -179,43 +255,79 @@ h1.example-app-name {
 
 /* tablet-large-landscape */
 
-@media all and (min-width: 961px) and (orientation: landscape) {}
+/* @media all and (min-width: 961px) and (orientation: landscape) {}
 
 /* tablet-small */
 
-@media all and (min-width: 600px) and (orientation: portrait) {}
+@media all and (min-width: 600px) and (orientation: portrait) {
+  /* .icon-nav {
+    display: none;
+  } */
+}
 
 /* tablet-large */
 
-@media all and (min-width: 601px) and (max-width: 840px) and (orientation: portrait) {}
+@media all and (min-width: 601px) and (max-width: 840px) and (orientation: portrait) {
+  /* .icon-nav {
+    display: none;
+  } */
+}
 
 /* desktop-x-small-landscape */
 
-@media all and (min-width: 0) and (max-width: 480px) and (orientation: landscape) {}
+@media all and (min-width: 0) and (max-width: 480px) and (orientation: landscape) {
+  .icon-nav {
+    display: none;
+  }
+}
 
 /* desktop-x-small */
 
-@media all and (min-width: 0) and (max-width: 480px) and (max-aspect-ratio: 4/3) {}
+@media all and (min-width: 0) and (max-width: 480px) and (max-aspect-ratio: 4/3) {
+  .icon-nav {
+    display: none;
+  }
+}
 
 /* desktop-small-landscape */
 
-@media all and (min-width: 481px) and (max-width: 840px) and (orientation: landscape) {}
+@media all and (min-width: 481px) and (max-width: 840px) and (orientation: landscape) {
+  /* .icon-nav {
+    display: none;
+  } */
+}
 
 /* desktop-small */
 
-@media all and (min-width: 481px) and (max-width: 840px) and (max-aspect-ratio: 4/3) {}
+@media all and (min-width: 481px) and (max-width: 840px) and (max-aspect-ratio: 4/3) {
+  /* .icon-nav {
+    display: none;
+  } */
+}
 
 /* desktop-medium-landscape */
 
-@media all and (min-width: 841px) and (max-width: 1280px) and (orientation: landscape) {}
+@media all and (min-width: 841px) and (max-width: 1280px) and (orientation: landscape) {
+  /* .icon-nav {
+    display: none;
+  } */
+}
 
 /* desktop-medium */
 
-@media all and (min-width: 841px) and (max-width: 1280px) and (max-aspect-ratio: 4/3) {}
+@media all and (min-width: 841px) and (max-width: 1280px) and (max-aspect-ratio: 4/3) {
+  /* .icon-nav {
+    display: none;
+  } */
+}
 
 /* desktop-large */
 
-@media all and (min-width: 1281px) and (max-width: 1600px) {}
+@media all and (min-width: 1281px) and (max-width: 1600px) {
+  .icon-nav {
+    display: none;
+  }
+}
 
 /* desktop-xlarge */
 
