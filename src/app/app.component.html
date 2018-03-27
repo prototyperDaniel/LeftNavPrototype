@@ -1,10 +1,10 @@
 <mat-drawer-container class="side-nav-container grey-body" autosize>
-  <mat-drawer #drawer [opened]="screenWidth > 1024" position="start" [mode]="(screenWidth > 1024) ? 'side' : 'over'" class="example-sidenav" id="darkPurple">
+  <mat-drawer #drawer [opened]="screenWidth > 1024" position="start" [mode]="(screenWidth > 1024) ? 'side' : 'over'" class="dark-purple">
     <img src="./assets/rizepointLogo.PNG" width="250px" height="66px" />
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" class="opacityCheck">
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" class="panel-medium-purple">
       <mat-expansion-panel-header class="specific-class">
-        <mat-panel-title class="side-nav-font-color" style="padding-top: 15px; align-items: center;">
-          <mat-icon class="colorWhiteIcon" style="align-items: center;">assessment</mat-icon> &nbsp; &nbsp; &nbsp;Define
+        <mat-panel-title class="side-nav-font-color" style="align-items: center;">
+          <mat-icon class="colorWhiteIcon" style="padding-top: 12px;">assessment</mat-icon> &nbsp; &nbsp; &nbsp;Define
         </mat-panel-title>
       </mat-expansion-panel-header>
       <div>
@@ -17,10 +17,10 @@
         <p class="side-nav-font-color">Notification Library</p>
       </div>
     </mat-expansion-panel>
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" class="opacityCheck">
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" class="panel-medium-purple">
       <mat-expansion-panel-header class="specific-class">
-        <mat-panel-title class="side-nav-font-color" style="padding-top: 15px;">
-          <mat-icon class="colorWhiteIcon">assignment</mat-icon> &nbsp; &nbsp; &nbsp;Gather
+        <mat-panel-title class="side-nav-font-color" style="align-items: center;">
+          <mat-icon class="colorWhiteIcon" style="padding-top: 12px;">assignment</mat-icon> &nbsp; &nbsp; &nbsp;Gather
         </mat-panel-title>
       </mat-expansion-panel-header>
       <p class="side-nav-font-color" id="opacityCheck">Forms</p>
@@ -50,10 +50,10 @@
       </mat-expansion-panel>
       <p class="side-nav-font-color" id="opacityCheck">Print Blank Form</p>
     </mat-expansion-panel>
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" class="opacityCheck">
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" class="panel-medium-purple">
       <mat-expansion-panel-header class="specific-class">
-        <mat-panel-title class="side-nav-font-color" style="padding-top: 15px;">
-          <mat-icon class="colorWhiteIcon">today</mat-icon> &nbsp; &nbsp; &nbsp;See
+        <mat-panel-title class="side-nav-font-color" style="align-items: center;">
+          <mat-icon class="colorWhiteIcon" style="padding-top: 12px;">today</mat-icon> &nbsp; &nbsp; &nbsp;See
         </mat-panel-title>
       </mat-expansion-panel-header>
       <div>
@@ -64,10 +64,10 @@
         <p class="side-nav-font-color">Config Feedback Reports</p>
       </div>
     </mat-expansion-panel>
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" class="opacityCheck">
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" class="panel-medium-purple">
       <mat-expansion-panel-header class="specific-class">
-        <mat-panel-title class="side-nav-font-color" style="padding-top: 15px;">
-          <mat-icon class="colorWhiteIcon">person outline</mat-icon> &nbsp; &nbsp; &nbsp;Act
+        <mat-panel-title class="side-nav-font-color" style="align-items: center;">
+          <mat-icon class="colorWhiteIcon" style="padding-top: 12px;">person outline</mat-icon> &nbsp; &nbsp; &nbsp;Act
         </mat-panel-title>
       </mat-expansion-panel-header>
       <div>
@@ -79,10 +79,10 @@
         <p class="side-nav-font-color">IAP Configuration</p>
       </div>
     </mat-expansion-panel>
-    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" class="opacityCheck">
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" class="panel-medium-purple">
       <mat-expansion-panel-header class="specific-class">
-        <mat-panel-title class="side-nav-font-color" style="padding-top: 15px; padding-bottom: 10px;">
-          <mat-icon class="colorWhiteIcon">settings</mat-icon> &nbsp; &nbsp; &nbsp;Admin
+        <mat-panel-title class="side-nav-font-color" style="align-items: center;">
+          <mat-icon class="colorWhiteIcon" style="padding-top: 12px;">settings</mat-icon> &nbsp; &nbsp; &nbsp;Admin
         </mat-panel-title>
       </mat-expansion-panel-header>
       <p class="side-nav-font-color">Management</p>
@@ -115,13 +115,14 @@
     <i class="material-icons paddingRight">apps</i>
   </mat-toolbar>
   <div id="greyBody">
+    <h3 id="paddingBody">Home Page</h3>
     <p id="paddingBody">
-      But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure? Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure? But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure? Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?
+      Main Page But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure? Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure? But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure? Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?
     </p>
   </div>
 </mat-drawer-container>
 <mat-sidenav-container class="icon-nav" id="greyBody">
-  <mat-sidenav #sidenav mode="side" opened>
+  <mat-sidenav #sidenav mode="side" [opened]="screenWidth > 768 && screenWidth < 1023">
     <img src="./assets/rizepointIcon.PNG" height="66px" width="55px" />
     <mat-panel-title style="padding-top: 5px;">
       <mat-menu #appMenu="matMenu" [overlapTrigger]="false" x-position="before">

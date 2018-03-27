@@ -37,7 +37,7 @@ h1.example-app-name {
   padding: 10px;
 }
 
-#darkPurple {
+.dark-purple {
   background: #300950
 }
 
@@ -45,7 +45,7 @@ h1.example-app-name {
   width: 200px;
 } */
 
-.opacityCheck {
+.panel-medium-purple {
   background: #3A1B56;
 }
 
